@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Навигатор ОГЭ — Чек-лист по заданиям</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🎯 Навигатор ОГЭ</h1>
+        <p>Пойми, какие знания нужны для каждого задания, и сдай на максимум!</p>
+    </header>
+
+    <!-- Основной блок с предметами -->
+    <main class="subjects-grid">
+
+        <!-- Карточка Физики -->
+        <div class="subject-card" id="subject-physics">
+            <div class="subject-header">
+                <span class="subject-icon">⚛️</span>
+                <h2>Физика</h2>
+            </div>
+            <!-- Индивидуальный прогресс-бар предмета -->
+            <div class="progress-container">
+                <div class="progress-bar" style="width: 80%;"></div>
+            </div>
+            <span class="progress-text">Готовность: 80%</span>
+            <a href="physics.html" class="open-subject-btn">Открыть задания</a>
+        </div>
+
+        <!-- Карточка Математики -->
+        <div class="subject-card" id="subject-math">
+            <div class="subject-header">
+                <span class="subject-icon">📐</span>
+                <h2>Математика</h2>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar" style="width: 50%;"></div>
+            </div>
+            <span class="progress-text">Готовность: 50%</span>
+            <a href="math.html" class="open-subject-btn">Открыть задания</a>
+        </div>
+
+        <!-- Сюда по аналогии добавятся Русский, Информатика, География и Биология -->
+
+    </main>
+
+    <footer>
+        <p>Создано для школьников. Разберись в ОГЭ без стресса.</p>
+    </footer>
+
+</body>
+</html>
