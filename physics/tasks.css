@@ -1,0 +1,177 @@
+
+/* ==========================================
+   СТИЛИ ДЛЯ КАРТОЧЕК ИСПЫТАНИЙ ОГЭ (tasks.css)
+   ========================================== */
+
+/* Ограничиваем общую ширину контента предметов */
+.subject-container {
+    max-width: 1200px !important;
+    margin: 0 auto;
+    width: 100%;
+    padding: 30px 20px;
+}
+
+header h1 {
+    color: #0f172a !important;
+    font-size: 2.2rem !important;
+    font-weight: 700 !important;
+    margin-top: 15px !important;
+}
+
+header p {
+    color: #475569 !important;
+    font-size: 1.05rem !important;
+}
+
+.back-btn {
+    display: inline-block !important;
+    color: #475569 !important;
+    background: #ffffff !important;
+    border: 1px solid #cbd5e1 !important;
+    padding: 8px 16px !important;
+    border-radius: 6px !important;
+    text-decoration: none !important;
+    font-weight: 600 !important;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05) !important;
+    transition: all 0.2s;
+}
+
+.back-btn:hover {
+    background: #f1f5f9 !important;
+    color: #0f172a !important;
+}
+
+/* Карточки заданий */
+.task-card {
+    display: block !important;
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
+    border-radius: 12px !important;
+    padding: 30px !important;
+    margin-bottom: 40px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.task-card-header {
+    display: flex !important;
+    align-items: center !important;
+    gap: 15px !important;
+    margin-bottom: 20px !important;
+    border-bottom: 2px solid #e2e8f0 !important;
+    padding-bottom: 10px !important;
+}
+
+/* ЦЕНТРИРОВАНИЕ СТРОГО ДЛЯ ЗАДАНИЯ №5 */
+.task-card:has(#task-5) .task-card-header {
+    justify-content: center !important;
+}
+
+.task-title {
+    font-size: 1.2rem !important;
+    color: #0f172a !important;
+    font-weight: 600 !important;
+    margin: 0 !important;
+}
+
+.task-checkbox {
+    width: 20px;
+    height: 20px;
+    accent-color: #2563eb;
+    cursor: pointer;
+}
+
+.task-body {
+    display: block !important;
+    width: 100% !important;
+}
+
+.task-question-text {
+    display: block !important;
+    width: 100% !important;
+    font-size: 1.05rem !important;
+    line-height: 1.6 !important;
+    color: #334155 !important;
+    margin-bottom: 25px !important;
+}
+
+/* Двухколоночный макет */
+.task-split-layout {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 40px !important;
+    width: 100% !important;
+    margin-bottom: 25px !important;
+}
+
+.task-left-info, .task-right-data {
+    flex: 1 !important;
+}
+
+.data-group-title {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #475569;
+    font-weight: 700;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #cbd5e1;
+    padding-bottom: 3px;
+}
+
+.data-item {
+    font-size: 1.05rem;
+    color: #1e293b;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* Окошки ответов */
+.academic-answer-block {
+    display: flex !important;
+    align-items: center !important;
+    gap: 15px !important;
+    margin-top: 25px !important;
+    padding-top: 15px !important;
+    border-top: 1px solid #cbd5e1 !important;
+    width: 100% !important;
+}
+
+.academic-answer-label {
+    font-size: 0.9rem;
+    color: #475569;
+    font-weight: 700;
+}
+
+.academic-boxes {
+    display: flex;
+    gap: 6px;
+}
+
+.academic-box {
+    width: 36px;
+    height: 36px;
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #2563eb;
+}
+
+.info-page-btn {
+    display: inline-block !important;
+    background-color: #2563eb !important;
+    color: #ffffff !important;
+    border: none !important;
+    padding: 10px 20px !important;
+    border-radius: 6px !important;
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    margin-top: 20px;
+}
