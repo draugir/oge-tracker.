@@ -183,46 +183,82 @@ details[open] summary::before {
     content: "▼ "; /* Менять стрелку на смотрящую вниз */
 }
 /* ==========================================================================
-   МОБИЛЬНАЯ ОПТИМИЗАЦИЯ ДЛЯ СМАРТФОНОВ (Экраны меньше 768px)
+   ИДЕАЛЬНАЯ МОБИЛЬНАЯ ВЕРСТКА ПО СТАНДАРТУ «РЕШУ ОГЭ» (Экраны до 768px)
    ========================================================================== */
 @media screen and (max-width: 768px) {
 
-    /* Убираем жесткие отступы у главного контейнера, чтобы использовать весь экран */
+    /* 1. Сбрасываем все боковые зажатые отступы контейнера */
     .subject-container {
-        padding: 10px !important;
+        padding: 8px !important;
+        margin: 0 auto !important;
         width: 100% !important;
         box-sizing: border-box !important;
     }
 
-    /* Перестраиваем двухколоночный макет задания в одну вертикальную линию */
-    .task-split-layout {
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 15px !important;
-    }
-
-    .task-left-info, .task-right-data {
+    /* 2. Делаем карточки просторными на весь экран без лишних теней */
+    .task-card {
+        padding: 12px !important;
+        margin-bottom: 16px !important;
         width: 100% !important;
+        box-sizing: border-box !important;
         float: none !important;
     }
 
-    /* Делаем так, чтобы таблицы приборов не ломали экран и плавно прокручивались пальцем */
-    .task-body {
-        overflow-x: auto !important;
+    /* 3. Убираем двухколоночную кашу. Выстраиваем всё строго в один широкий ряд */
+    .task-split-layout {
+        display: block !important;
         width: 100% !important;
     }
 
-    /* Увеличиваем Bento-спойлеры, чтобы по ним было удобно тапать пальцем */
-    details summary {
-        padding: 14px 0 !important;
-        font-size: 1.05rem !important;
+    /* 4. Полный сброс ширины для блоков задания — текст займет 100% ширины */
+    .task-left-info,
+    .task-right-data {
+        width: 100% !important;
+        max-width: 100% !important;
+        float: none !important;
+        margin: 0 0 20px 0 !important;
+        padding: 0 !important;
+        display: block !important;
     }
 
-    /* Корректируем размеры бланка ответов под мобильный экран */
-    .academic-box {
-        width: 35px !important;
-        height: 35px !important;
-        font-size: 1.1rem !important;
-        line-height: 35px !important;
+    /* 5. Делаем строки элементов задания широкими и разборчивыми */
+    .data-item {
+        width: 100% !important;
+        box-sizing: border-box !important;
+        white-space: normal !important; /* Разрешаем тексту переноситься красиво */
+        font-size: 1.05rem !important;
+        line-height: 1.5 !important;
+        margin-bottom: 8px !important;
+    }
+
+    /* 6. ИСПРАВЛЕНИЕ АЛГОРИТМА: уменьшаем левую полосу, расширяем место под текст */
+    div[style*="background: #eff6ff"] {
+        padding: 12px 12px 12px 14px !important; /* Меньше отступы по бокам */
+        border-left-width: 4px !important; /* Сужаем синюю полосу */
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Делаем пункты списка алгоритма крупными и свободными */
+    div[style*="background: #eff6ff"] ol {
+        padding-left: 18px !important;
+    }
+
+    div[style*="background: #eff6ff"] li {
+        font-size: 1.05rem !important; /* Комфортный размер вместо гигантского */
+        line-height: 1.5 !important;
+        margin-bottom: 10px !important;
+    }
+
+    /* 7. Адаптируем Bento-спойлеры под тапы пальцем */
+    details {
+        padding: 4px 10px !important;
+    }
+
+    details summary {
+        font-size: 1rem !important;
+        padding: 12px 0 !important;
     }
 }
