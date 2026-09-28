@@ -1,0 +1,251 @@
+/* ==========================================
+   ГЛАВНЫЕ СВЕТЛЫЕ СТИЛИ ПЛАТФОРМЫ НАВИГАТОР ОГЭ (style.css)
+   ========================================== */
+
+html, body {
+    background-color: #f8fafc !important; /* Приятный светлый фон */
+    color: #0f172a !important; /* Тёмный читаемый текст */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-layout {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.main-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo-zone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.logo-badge {
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.main-header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 0;
+    color: #0f172a !important;
+    letter-spacing: -0.02em;
+}
+
+.header-subtitle {
+    font-size: 1.1rem;
+    color: #475569 !important;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+/* СТИЛИ ДЛЯ НОВОГО ПРИВЕТСТВЕННОГО БАННЕРА (HERO SECTION) */
+.hero-section {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 35px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+}
+
+.hero-content h2 {
+    font-size: 1.8rem;
+    color: #0f172a;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #334155;
+    margin-bottom: 35px;
+    max-width: 900px;
+}
+
+/* Сетка мини-фишек внутри баннера */
+.features-mini-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.feature-item {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: left;
+}
+
+.feature-icon {
+    font-size: 1.6rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.feature-item h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0 0 6px 0;
+}
+
+.feature-item p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #64748b;
+    margin: 0;
+}
+
+/* Раздел каталога */
+.section-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.subjects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+.subject-card {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.subject-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
+}
+
+.card-top {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 25px;
+}
+
+.subject-icon-wrapper {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.physics-bg { background: rgba(37, 99, 235, 0.1); color: #2563eb; }
+.math-bg { background: rgba(168, 85, 247, 0.1); color: #a855f7; }
+.russian-bg { background: rgba(234, 179, 8, 0.1); color: #eab308; }
+.info-bg { background: rgba(16, 185, 129, 0.1); color: #10b981; }
+
+.subject-info h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0;
+    color: #0f172a !important;
+}
+
+.task-count {
+    font-size: 0.85rem;
+    color: #64748b !important;
+    display: block;
+    margin-top: 2px;
+}
+
+.card-progress-zone {
+    margin-bottom: 25px;
+}
+
+.progress-bar-container {
+    height: 10px;
+    background-color:
+
+
+#e2e8f0 !important;
+    border-radius: 9999px;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #10b981, #34d399) !important;
+    border-radius: 9999px;
+    box-shadow: 0 0 12px rgba(16, 185, 129, 0.4) !important;
+    transition: width 0.4s ease;
+}
+
+.progress-text {
+    font-size: 0.85rem;
+    color: #475569 !important;
+    font-weight: 600;
+}
+
+.enter-subject-btn {
+    display: block;
+    text-align: center;
+    background-color: #2563eb !important;
+    color: #ffffff !important;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 12px;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+.enter-subject-btn:hover {
+    background-color: #1d4ed8 !important;
+}
+
+.enter-subject-btn.locked {
+    background-color: #e2e8f0 !important;
+    color: #94a3b8 !important;
+    cursor: not-allowed;
+}
+
+.main-footer {
+    text-align: center;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 30px;
+    font-size: 0.9rem;
+    color: #64748b;
+}
