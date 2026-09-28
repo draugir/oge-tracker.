@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Навигатор ОГЭ — Платформа подготовки</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="page-main">
+
+    <div class="main-layout">
+
+        <!-- Верхний блок (Header) -->
+        <header class="main-header">
+            <div class="logo-zone">
+
+                <h1>Навигатор ОГЭ</h1>
+            </div>
+            <p class="header-subtitle">Твой интерактивный путеводитель по экзаменам</p>
+        </header>
+
+        <!-- НОВЫЙ БЛОК: Приветственный баннер (Hero Section) -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h2>Сдай ОГЭ на максимум без выгорания! 🚀</h2>
+                <p>Мы собрали все актуальные задания из базы ФИПИ и упаковали их в удобный пошаговый чек-лист. Выбирай предмет, изучай короткую суть тем, смотри живые разборы и отслеживай свой реальный прогресс в режиме онлайн.</p>
+            </div>
+
+            <!-- Интерактивные фишки сайта -->
+            <div class="features-mini-grid">
+                <div class="feature-item">
+                    <span class="feature-icon">🎯</span>
+                    <h3>Только база ФИПИ</h3>
+                    <p>Никакой лишней душной теории — только то, что реально попадётся в КИМах.</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">⚡</span>
+                    <h3>Быстрые видеоразборы</h3>
+                    <p>Смотри короткие ролики ВК Видео вместо чтения километров текста.</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">📊</span>
+                    <h3>Умный трекер</h3>
+                    <p>Каждая нажатая галочка двигает твой неоновый прогресс-бар к 100%.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Раздел выбора предметов -->
+        <section class="catalog-section">
+            <h2 class="section-title">Выбирай предмет и начинай прокачку:</h2>
+
+            <div class="subjects-grid">
+
+                <!-- КАРТОЧКА: ФИЗИКА -->
+                <div class="subject-card" id="subject-physics">
+                    <div class="card-top">
+                        <div class="subject-icon-wrapper physics-bg">⚛️</div>
+                        <div class="subject-info">
+                            <h2>Физика</h2>
+                            <span class="task-count">22 задания ФИПИ</span>
+                        </div>
+                    </div>
+
+                    <div class="card-progress-zone">
+                        <div class="progress-bar-container">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <div class="progress-text">Готовность: 0%</div>
+                    </div>
+
+                    <a href="./physics/physics.html" class="enter-subject-btn">Открыть тренажер</a>
+                </div>
+
+                <!-- КАРТОЧКА: МАТЕМАТИКА -->
+                <div class="subject-card" id="subject-math">
+                    <div class="card-top">
+                        <div class="subject-icon-wrapper math-bg">📐</div>
+                        <div class="subject-info">
+                            <h2>Математика</h2>
+                            <span class="task-count">25 заданий ФИПИ</span>
+                        </div>
+                    </div>
+
+                    <div class="card-progress-zone">
+                        <div class="progress-bar-container">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <div class="progress-text">Готовность: 0%</div>
+                    </div>
+
+
+<a href="math.html" class="enter-subject-btn">Открыть тренажер</a>
+                </div>
+
+                <!-- КАРТОЧКА: РУССКИЙ ЯЗЫК -->
+                <div class="subject-card" id="subject-russian">
+                    <div class="card-top">
+                        <div class="subject-icon-wrapper russian-bg">📝</div>
+                        <div class="subject-info">
+                            <h2>Русский язык</h2>
+                            <span class="task-count">В разработке</span>
+                        </div>
+                    </div>
+
+                    <div class="card-progress-zone">
+                        <div class="progress-bar-container">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <div class="progress-text">Готовность: 0%</div>
+                    </div>
+
+                    <a href="#" class="enter-subject-btn locked">Скоро открытие</a>
+                </div>
+
+                <!-- КАРТОЧКА: ИНФОРМАТИКА -->
+                <div class="subject-card" id="subject-informatics">
+                    <div class="card-top">
+                        <div class="subject-icon-wrapper info-bg">💻</div>
+                        <div class="subject-info">
+                            <h2>Информатика</h2>
+                            <span class="task-count">В разработке</span>
+                        </div>
+                    </div>
+
+                    <div class="card-progress-zone">
+                        <div class="progress-bar-container">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <div class="progress-text">Готовность: 0%</div>
+                    </div>
+
+                    <a href="#" class="enter-subject-btn locked">Скоро открытие</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Подвал сайта -->
+        <footer class="main-footer">
+            <p>🚀 Создано для школьников ровесником. Прокачай свои знания шаг за шагом.</p>
+        </footer>
+
+    </div>
+
+    <!-- Универсальный JS-скрипт -->
+    <script src="script.js"></script>
+</body>
+</html>
